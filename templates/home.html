@@ -1,0 +1,23 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %}
+    <title>Home</title>
+ {% endblock title %}
+
+ {% block content %}
+     <h2>Welcome home!</h2>
+     <p>This is the best choice you've made you will never regret it. </p>
+     
+     <div class="container">
+     <div class="row">
+         <div class="col-sm-4 justify-content">
+             <img src="{% static 'images/facebook_logo.png' %}" alt="">
+         </div>
+         <div class="col-sm-4">
+             <img src="{% static 'images/linkedin.png' %}" alt="">
+         </div>
+         <div class="col-sm-4"><img src="{% static 'images/twitter_logo.png' %}" alt=""></div>
+     </div>
+     </div>
+ {% endblock content %}
+
